@@ -29,6 +29,10 @@ interface CustomProps {
 
 }
 
+const fieldForm = () => {
+    console.log('FieldForm');
+}
+
 const RenderField = ({ field, props }: { field: any; props: CustomProps }) => {
    const { fieldType, iconSrc, iconAlt, placeholder } = props;
     switch (fieldType) {
