@@ -36,6 +36,19 @@ const PatientForm = () => {
     },
   })
 
+  const DoctorForm = () => {
+    const router = useRouter()
+    const [isLoading, setisLoading] = useState(false)
+  
+    const form = useForm<z.infer<typeof UserFormValidation>>({
+      resolver: zodResolver(UserFormValidation),
+      defaultValues: {
+        name: "",
+        email:"",
+        phone:""
+      },
+    })
+
 async  function onSubmit({ name, email, phone}: z.infer<typeof UserFormValidation>) {
     setisLoading(true)
     try {
