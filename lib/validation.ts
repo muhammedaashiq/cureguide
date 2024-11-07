@@ -12,3 +12,4 @@ export const UserFormValidation = z.object({
       .string()
       .refine((phone) => /^\+\d{10,15}$/.test(phone), "Invalid Phone Number")
   })
+   
