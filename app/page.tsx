@@ -23,7 +23,7 @@ export default function Home() {
             </p>
 
             <Link href="/?admin=true" className="text-green-500">
-              Admin is 
+              Admin
             </Link>
           </div>
         </div>
